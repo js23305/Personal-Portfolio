@@ -1,0 +1,32 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-image.jpg') no-repeat center center/cover;
+}
+
+/* Navigation Bar */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #000 !important;
+}
+
+/* Project Cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contact Form */
+form input, form textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
