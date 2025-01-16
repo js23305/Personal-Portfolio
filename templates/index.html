@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><!--Conatins the metadata-->
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta name="decsription" content="Hello, I am Jasmine - Looking for junior roles in web development.">
     <title>Welcome to my portfolio</title>
 
-    <!--Bootstrap Bar-->
+    <!--Bootstrap Link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="style.css">
+    <!--Custom CSS Link-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!--Link to style.css file using Flask's url_for function-->
 
 </head>
 
 <body>
+<!-- contains all visible content on webpage-->
 
     <!--Navigation bar-->
+    <!--Built using Bootsrap's navbar class for styling-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Jasmine's Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle naviagation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span><!--navbar-toggler toggles the menu on smaller screen-->
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav"></div>
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li><!--navigation link-->
                     <li><a href="/about">About</a></li>
                     <li><a href="/projects">Projects</a></li>
                     <li><a href="/contact">Contact</a></li>
@@ -39,6 +41,7 @@
     </nav>
 
     <!--Welcome message-->
+    <!--Uses d-flex, align-items-center, and text-center for alignment and styling-->
     <section class="hero-section d-flex align-items-center justify-content-center text-center text-white">
         <div class="container text-center my-5">
             <h1 class="display-4">Hello, I am Jasmine</h1>
