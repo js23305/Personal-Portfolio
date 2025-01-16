@@ -20,7 +20,7 @@
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#">Jasmine's Portfolio</a>
             <button class="navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav", aria-controls="navbarNav" aria-expands="false" aria-toggle="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,21 +38,42 @@
 
 
     <!--About Selection-->
-    <section class="hero-section d-flex align-items-center justify-content-center text-center text-white">
-        <div class="container text-center my-5">
-            <h1 class="text-center mb-4">About Me</h1>
-            <img src="{{ url_for('static', filename='images/profile.jpg')}}" alt="Jasmine's Photo" class="rounded-circle my-4" style="width: 150px; height: 150px;">
-            <p class="text-center">
-                I am an MSc Artificial Intelligence graduate from the University of Essex, 
-                passionate about leveraging technology to solve real-world problems. With expertise in machine learning, 
-                data analysis, and software development, I’m eager to apply my skills in AI, data science, 
-                and web development to make an impact. I thrive in dynamic environments and am excited to contribute to innovative teams 
-                shaping the future of tech.
-            </p>
-        </div>
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <!--Left content-->
+                <div class="col-md-6 left-content">
+                    <h1>About Me</h1>
+                    <img src="{{ url_for('static', filename='images/profile.png')}}" alt="Jasmine's Photo" class="rounded-circle my-4">
+                    <p>
+                        I am an MSc Artificial Intelligence graduate from the University of Essex, 
+                        passionate about leveraging technology to solve real-world problems. With expertise in machine learning, 
+                        data analysis, and software development, I’m eager to apply my skills in AI, data science, 
+                        and web development to make an impact. I thrive in dynamic environments and am excited to contribute to innovative teams 
+                        shaping the future of tech.
+                    </p>
+                </div>
 
+                <!--skills section-->
+                <!--Right Icons-->
+                <div class="col-,d-6 right-icons">
+
+                    <h3>Programming</h3>
+                    <img src="{{url_for('static', filename='images/python.png') }}" alt="Python">
+                    <img src="{{url_for('static', filename='images/jupyter.png') }}" alt="Jupyter">
+                    <img src="{{url_for('static', filename='images/js.png') }}" alt="Javascript">
+                    <img src="{{url_for('static', filename='images/java.svg') }}" alt="Java">
+                    <img src="{{url_for('static', filename='images/html.png') }}" alt="Html">
+                    <img src="{{url_for('static', filename='images/git.png') }}" alt="Github">
+                    <img src="{{url_for('static', filename='images/css.png') }}" alt="CSS">
+                    <img src="{{url_for('static', filename='images/database.png') }}" alt="Database">
+
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+                
     <!--Bootstramp JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
