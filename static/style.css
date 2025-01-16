@@ -1,4 +1,6 @@
 /* General reset */
+/*Removes default margins from the body.
+Sets a global font style to Arial and a text color of white*/
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -6,7 +8,7 @@ body {
 }
 
 /*Hero Section8*/
-.hero-section{
+.hero-section {
     height: 100vh;
     background: linear-gradient(135deg, #FFDEE9, #B5FFFC); /*Gradient pink to rainbow*/
     background-size: cover;
@@ -17,7 +19,7 @@ body {
     position: relative;
 }
 
-.hero-section h1{
+.hero-section h1 {
     font-size: 4rem;
     font-weight: bold;
     color: #ff0080; /* soft pink color for the heading*/
