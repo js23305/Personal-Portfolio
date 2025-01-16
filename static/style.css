@@ -15,8 +15,38 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align:center;
-    position: relative;
+    text-align:left;/*Align text to left*/
+    padding: 20px;
+}
+
+/*Left content styling*/
+.left-content{
+    width: 50%; /*Take 50% of the page width*/
+    text-align: left; /*Align text to the left*/
+}
+
+.left-content h1{
+    font-size: 2.5rem;
+    color: #ff0080;
+}
+
+.left-content img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/*Right Icons styling*/
+.right-icons{
+    width: 50%; /*Take 50% of the page width*/
+    text-align: right; /*Align text to the left*/
+}
+
+.right-icons img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
 }
 
 .hero-section h1 {
