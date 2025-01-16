@@ -20,18 +20,19 @@ body {
 }
 
 .hero-section h1 {
-    font-size: 4rem;
+    font-size: 4rem; /*4rem is the font size of h1 in index.html*/
     font-weight: bold;
     color: #ff0080; /* soft pink color for the heading*/
 
 }
 
-.hero-section p{
+.hero-section p {
     font-size: 1.5rem;
     color: #ff5e99; /* soft pink color for the heading*/
 
 }
 
+/*for button that is View my projects*/
 .hero-section .btn-primary {
     background-color: #ff66b2; /* Pink button */
     border: none;
@@ -47,12 +48,14 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*Jasmine's portfolio brandname*/
 .navbar-brand {
     color: #ff66b2;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
+/*When user hovers the brand anme with mouse, the brand anme will become lighter*/
 .navbar-brand:hover {
     color: #ff99cc;
 }
